@@ -1,1 +1,12 @@
- <h1>Home Page</h1>
+<body ng-controller="HomeCtrl">
+    <ul>
+      <li ng-repeat="task in tasks">{{ task }}</li>
+      <li> {{ hello }} </li>
+    </ul>
+    
+    <form ng-submit="addTask()">
+      <input ng-model="newTaskText" />
+      <button type="submit">Add Task</button>
+    </form>
+    
+</body>

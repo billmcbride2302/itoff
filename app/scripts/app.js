@@ -9,12 +9,11 @@
          $stateProvider
             .state('home', {
                  url: '/',
-                 controller: 'HomeCtrl as home',
                  templateUrl: '/templates/home.html'
-             });å
+             });
      }
      
     angular
          .module('itOff', ['ui.router', 'firebase'])
-         .config(config);
+         .config(config)
  })();
